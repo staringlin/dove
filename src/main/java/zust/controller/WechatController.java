@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -25,6 +26,7 @@ import com.alibaba.fastjson.JSONException;
 
 import zust.Config.APP;
 import zust.entity.Token;
+import zust.service.TokenServiceI;
 import zust.util.CheckUtil;
 
 /**
@@ -36,7 +38,8 @@ import zust.util.CheckUtil;
 @RequestMapping("/wechat")
 public class WechatController {
 
-    
+	@Autowired
+	TokenServiceI tokenService;
     
     /**
      * 微信接入
@@ -88,10 +91,8 @@ public class WechatController {
     @ResponseBody
 	private void getAccessToken() throws IOException {
 		// TODO Auto-generated method stub
-    	String resConetnt = zust.util.Get.get("https://api.weixin.qq.com/cgi-bin/token", APP.appID, APP.appsecret);
-        Token accessParse = JSON.parseObject(resConetnt,Token.class);
-        System.out.println("parser: "+accessParse.getAccess_token());
-        System.out.println("timeout: "+accessParse.getExpires_in());
+		String token = tokenService.FetchToken();
+		System.out.println(token);
 	}
     
     /**
@@ -103,16 +104,13 @@ public class WechatController {
     public void CreateMenu() throws IOException{
 		try {
 			//此处需要修改 从数据库读取
-	    	String resConetnt = zust.util.Get.get("https://api.weixin.qq.com/cgi-bin/token", APP.appID, APP.appsecret);
-	        Token accessParse = JSON.parseObject(resConetnt,Token.class);
-			String access_token = accessParse.getAccess_token();
+			String access_token = tokenService.FetchToken();
 			String user_define_menu = "{\"button\":["
 					+ "{\"name\":\"获取信息\",\"sub_button\":"
 					+ "[{\"type\":\"view\",\"name\":\"历史通知\",\"key\":\"11\",\"url\":\"http://www.baidu.com\"},"
-					+ "{\"type\":\"click\",\"name\":\"课表信息\",\"key\":\"22\"}]}"
+					+ "{\"type\":\"click\",\"name\":\"课表信息\",\"key\":\"22\"}"
 					+ ",{\"type\":\"click\",\"name\":\"课程信息\",\"key\":\"20_PROMANAGE\"}]},"
-					+ "{\"type\":\"view\",\"name\":\"历史通知\",\"key\":\"11\",\"url\":\"http://www.baidu.com\"}]}";
-			System.out.println(user_define_menu);
+					+ "{\"type\":\"view\",\"name\":\"绑定\",\"key\":\"12\",\"url\":\"http://www.baidu.com\"}]}";
 			String action = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token="+access_token;
 			try {
 				URL url = new URL(action);
@@ -147,4 +145,65 @@ public class WechatController {
 		}
 		
 	}
+    
+    
+    @RequestMapping(value="/test",method = {RequestMethod.GET, RequestMethod.POST})
+	private void test() throws IOException {
+		// TODO Auto-generated method stub
+		String token = tokenService.FetchToken();
+		System.out.println(token);
+	}
+    
+    /**
+     * 推送消息
+     *
+     */
+    @RequestMapping(value="/sendMessage",method = {RequestMethod.GET, RequestMethod.POST})
+    @ResponseBody
+    public void sendMessage(String content) throws IOException{
+		try {
+			String access_token = tokenService.FetchToken();
+			//推送类型
+			System.out.println(content);
+			String sendType ="{\"filter\":{\"is_to_all\":true,\"tag_id\":2},"
+					+ "\"text\":{\"content\":\""+content+"\"},"
+					+ "\"msgtype\":\"text\"}" ;
+			System.out.println(sendType);
+			String action = "https://api.weixin.qq.com/cgi-bin/message/mass/sendall?access_token="+access_token;
+			try {
+				URL url = new URL(action);
+				HttpURLConnection http = (HttpURLConnection) url.openConnection();
+
+				http.setRequestMethod("POST");
+				http.setRequestProperty("Content-Type","application/x-www-form-urlencoded");
+				http.setDoOutput(true);
+				http.setDoInput(true);
+				System.setProperty("sun.net.client.defaultConnectTimeout", "30000");//连接超时30秒
+				System.setProperty("sun.net.client.defaultReadTimeout", "30000"); //读取超时30秒
+
+				http.connect();
+				OutputStream os= http.getOutputStream();
+				os.write(sendType.getBytes("UTF-8"));//传入参数
+				os.flush();
+				os.close();
+
+				InputStream is =http.getInputStream();
+				int size =is.available();
+				byte[] jsonBytes =new byte[size];
+				is.read(jsonBytes);
+				String message=new String(jsonBytes,"UTF-8");
+				System.out.println(message);
+				} catch (MalformedURLException e) {
+				e.printStackTrace();
+				} catch (IOException e) {
+				e.printStackTrace();
+				} 
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		
+	}
+    
+    
+    
 }
