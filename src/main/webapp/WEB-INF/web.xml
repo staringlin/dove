@@ -4,6 +4,15 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+ 	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			classpath*:applicationContext.xml,
+			classpath*:spring-hibernate.xml,
+			classpath*:spring-druid.xml
+		</param-value>
+	</context-param>
   
   <!-- Filter 定义 -->
 	<!-- 编码  filter -->

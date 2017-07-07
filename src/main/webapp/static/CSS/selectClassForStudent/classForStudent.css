@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.top_view{
+    width: 100%;
+    height: 160px;
+    margin: 0px;
+}
+
+.top_view_image{
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+}
+
+.top_view_image img{
+    width: 100%;
+    height: 100%;
+}
+
+.semester_and_info{
+    height: 160px;
+    margin-left: 20px;
+    padding: 0px;
+    float: left;
+}
+
+.academic_year_and_semester{
+    height: 90px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.academic_year_class{
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 微软雅黑;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+
+.semester_class{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    font-family: 微软雅黑;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+
+.academic_year_and_semester span{
+    margin-top: 20px;
+    margin-left: 5px;
+    line-height: 50px;
+    margin-right: 5px;
+    font-size: 20px;
+    font-family: 微软雅黑;
+    float: left;
+}
+
+.info{
+    margin-left: 20px;
+    height: 45px;
+    margin-top: 5px;
+    font-family: 微软雅黑;
+    font-size: 20px;
+}
+
+.course_list_view{
+    margin-top: 5px;
+    width: 100%;
+}
+
+.course_list{
+    width: 100%;
+    list-style: none;
+}
+
+.course_list li{
+    width: 100%;
+    height: 170px;
+    border-bottom: 1px solid darkgray;
+    border-top: 1px solid darkgray;
+    margin-top: -1px;
+}
+
+.course_list li:nth-child(1){
+    height: 75px;
+}
+
+.course_list_column_name{
+    margin-left: 20px;
+    height: 45px;
+    line-height: 45px;
+    margin-top: 15px;
+    font-size: 28px;
+    font-family: 微软雅黑;
+    float: left;
+}
+
+.operation{
+    width: 100px;
+    height: 45px;
+    position: absolute;
+    right: 80px;
+    margin-top: 15px;
+    line-height: 45px;
+    float: left;
+    font-size: 28px;
+    font-family: 微软雅黑;
+}
+
+.course{
+    margin-left: 20px;
+    width: 550px;
+    float: left;
+    font-size: 28px;
+    font-family: 微软雅黑;
+}
+
+.course_name{
+    margin-top: 10px;
+    width: 550px;
+    height: 60px;
+}
+
+.course_time{
+    margin-top: 10px;
+    width: 550px;
+    height: 35px;
+}
+
+.course_position{
+    margin-top: 10px;
+    width: 550px;
+    height: 35px;
+}
+
+.operation_button{
+    margin-top: 60px;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: #1ea114;
+    color: white;
+    position: absolute;
+    right: 30px;
+    font-family: 微软雅黑;
+    font-size: 23px;
+    text-align: center;
+    -webkit-appearance: none;
+}
+
+.operation_button:hover{
+    cursor: pointer;
+}
+
+.operation_button:active{
+    background-color: darkgray;
+}
+

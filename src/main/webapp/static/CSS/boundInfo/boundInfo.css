@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.top_view{
+    height: 180px;
+    width: 180px;
+    margin-top: 42px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top_view img{
+    width: 100%;
+    height: 100%;
+}
+
+.top_info{
+    width: 100%;
+    height: 45px;
+    font-size: 40px;
+    font-family: 微软雅黑;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info_input{
+    margin-top: 50px;
+    width: 78%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 80px;
+    border: 1px solid darkgray;
+    font-size: 40px;
+    font-family: 微软雅黑;
+    border-radius: 20px;
+    padding-left: 2%;
+}
+
+.info_button{
+    margin-top: 50px;
+    width: 80%;
+    height: 80px;
+    font-family: 微软雅黑;
+    font-size: 40px;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #1ea114;
+    border-width: 0px;
+    text-align: center;
+    color: white;
+    -webkit-appearance: none;
+}
+
+.info_button:hover{
+    cursor: pointer;
+}
+
+.info_button:active{
+    background-color: darkgray;
+}
+
+.info_agree{
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    color: #5eaebf;
+    font-family: 微软雅黑;
+}
+
+

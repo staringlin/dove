@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "wechat")
+@Table(name = "cwechat")
 public class Token {
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
