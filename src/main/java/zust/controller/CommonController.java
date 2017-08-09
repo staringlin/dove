@@ -16,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 import zust.entity.wechatSignature;
 import zust.service.StudentServiceI;
 import zust.util.CheckUtil;
+import zust.util.ImagePreProcess2;
 
 /**
  * @author star
@@ -38,6 +39,15 @@ public class CommonController {
 		request.setAttribute("openId",openId);
         return "boundInfo";
 	}
+	
+	@RequestMapping("/justify")
+	public String justify(String openId) throws IOException{
+		request.setAttribute("openId",openId);
+        return "justify";
+	}
+	
+
+	
 	
 	@RequestMapping("/doBound")
 	public String bound(String password,String openId,String xh) throws IOException{

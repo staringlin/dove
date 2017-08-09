@@ -14,7 +14,7 @@
 		<hibernate-validator.version>4.3.2.Final</hibernate-validator.version>
 		<hibernate-search.version>4.2.0.Final</hibernate-search.version>
 		<fastjson.version>1.2.8</fastjson.version>
-		<junit.version>4.12</junit.version>		
+		<junit.version>4.5</junit.version>		
 		<annotation-version>1.2</annotation-version>
 		<jetty.version>8.1.16.v20140903</jetty.version>
 
@@ -183,6 +183,45 @@
 		    <artifactId>xpp3_min</artifactId>  
 		    <version>1.1.4c</version>  
 		</dependency>				
+
+  		<!--jsoup  -->				
+        <dependency>
+		    <groupId>org.jsoup</groupId>
+		    <artifactId>jsoup</artifactId>
+		    <version>1.9.1</version>
+		</dependency>
+		
+		<dependency>  
+            <groupId>net.sourceforge.htmlunit</groupId>  
+            <artifactId>htmlunit</artifactId>  
+            <version>2.18</version>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>net.sourceforge.htmlunit</groupId>  
+            <artifactId>htmlunit-core-js</artifactId>  
+            <version>2.9</version>  
+            <scope>compile</scope>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>xml-apis</groupId>  
+            <artifactId>xml-apis</artifactId>  
+            <version>1.4.01</version>  
+        </dependency>  
+  
+        <!-- http client -->  
+        <dependency>  
+            <groupId>org.apache.httpcomponents</groupId>  
+            <artifactId>httpclient</artifactId>  
+            <version>4.5</version>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>org.apache.httpcomponents</groupId>  
+            <artifactId>httpmime</artifactId>  
+            <version>4.5</version>  
+        </dependency>  
 
   </dependencies>
   <build>
