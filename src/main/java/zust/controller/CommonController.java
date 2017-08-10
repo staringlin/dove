@@ -50,8 +50,8 @@ public class CommonController {
 	
 	
 	@RequestMapping("/doBound")
-	public String bound(String password,String openId,String xh) throws IOException{
-		studentService.bound(password, openId, xh);
+	public String bound(String password,String openId,String xh,String name) throws IOException{
+		studentService.bound(password, openId, xh,name);
         return "test";
 	}
 

@@ -94,7 +94,8 @@ public class GrepController {
                 return EntityUtils.toString(re2.getEntity(), "utf-8");
             }else{
                 System.out.println("登陆成功");
-                return e.text();
+                String[] content = e.text().split(" ");
+                return content[1].replace("同学", "");
             }
         } else{
             System.out.println("登陆不成功，请稍后再试!");
@@ -112,6 +113,7 @@ public class GrepController {
 		//下载验证码
 		String storeName = ImagePreProcess2.downloadImage();
 		System.out.println(storeName);
+		request.setAttribute("checkcode", storeName);
 		return "forward:/common/bound";
 	}
 	

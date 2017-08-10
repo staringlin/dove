@@ -16,8 +16,10 @@ public class APP {
 	//验证码存储路径
 	public static final String CODE_SAVE_PATH = "D:/javaEEworkspace/dove/src/main/webapp/static/image/boundInfo/";
 	
+	//爬虫必须的cookie
 	public static String cookie = "" ;
 	
+	//登录必须的input由校外访问获得
 	public static String __VIEWSTATE = "";
 	
 	public static String __VIEWSTATEGENERATOR = "";

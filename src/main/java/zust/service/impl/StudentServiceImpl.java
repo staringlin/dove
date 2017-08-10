@@ -30,13 +30,13 @@ public class StudentServiceImpl implements StudentServiceI{
 
 
 	@Override
-	public String bound(String password,String openId,String xh) throws IOException {
+	public String bound(String password,String openId,String xh,String name) throws IOException {
 		// TODO Auto-generated method stub
 		Student stu = new Student();
 		stu.setOpenId(openId);
 		stu.setPassword(MD5Util.md5(password));
 		stu.setS_id(xh);
-		stu.setStudent_name("star");
+		stu.setStudent_name(name);
 		studentDao.save(stu);
 		return "ok";
 	}

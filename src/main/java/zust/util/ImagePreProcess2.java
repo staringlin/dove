@@ -28,7 +28,8 @@ public class ImagePreProcess2 {
     	HttpResponse response = HttpUtils.getRawHtml(APP.code_url);
     	int StatusCode = response.getStatusLine().getStatusCode();
     	if(StatusCode == 200){
-    		String sotreName = APP.CODE_SAVE_PATH+"verification_code.jpg";
+    		String jpg = System.currentTimeMillis()+Math.round(Math.random()*10)+".jpg";
+    		String sotreName = APP.CODE_SAVE_PATH+jpg;
     		HttpEntity entity = response.getEntity();
     		byte[] data = EntityUtils.toByteArray(entity);
     		File storePath = new File(sotreName);
@@ -36,7 +37,7 @@ public class ImagePreProcess2 {
     		fos.write(data);
     		fos.flush();
     		fos.close();
-    		return sotreName;
+    		return jpg;
     	}
     	return null;
     	

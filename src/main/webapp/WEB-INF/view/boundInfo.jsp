@@ -23,7 +23,7 @@
         <div class="verification_code_class">
             <input id="info_verification_code" class="input_verification_code" type="text" placeholder="请输入验证码">
             <div class="verification_code_image">
-                <img src="${pageContext.request.contextPath}/static/image/boundInfo/verification_code.jpg">
+                <img src="${pageContext.request.contextPath}/static/image/boundInfo/${checkcode}">
             </div>
         </div>
         <input class="info_button" type="button" value="绑定">
@@ -47,8 +47,7 @@
     jQuery(document).ready(function () {
             var widthOfScreen = jQuery(document).width();
             var heightOfScreen = jQuery(document).height();
-            console.log(widthOfScreen);
-            console.log(heightOfScreen);
+
 
             jQuery(".input_verification_code").css("width", 0.78*widthOfScreen - 240 + "px");
 
@@ -71,10 +70,14 @@
                     
                     jQuery.post("${pageContext.request.contextPath}/grep/login",{password:o_info_password.val(),xh:o_info_stuNum.val(),code:o_info_verification_code.val()},
 	                    function(data){
-	                    	if(data != null){
+	                    	if(data != ""){
+	                            console.log(data);
 	                    	 o_bound_info_content.text("恭喜，绑定成功！"+data);
 	                         o_bound_info_btn.empty();
 	                         o_bound_info_btn.val("OK");
+	                         var str = data.substring(1,data.length-1);
+	                         jQuery.post("${pageContext.request.contextPath}/common/doBound",{password:o_info_password.val(),xh:o_info_stuNum.val(),openId:"${openId}",name:str})
+	                         //可以在里发送ajax去course接口
 	                    	}else{
 		                    	 o_bound_info_content.text("账号或密码错误");
 		                         o_bound_info_btn.empty();

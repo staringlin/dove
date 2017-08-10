@@ -11668,3 +11668,1262 @@ WARN btpool0-1 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete
 WARN btpool0-1 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
 WARN btpool0-1 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
 WARN btpool0-1 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Thu Aug 10 10:15:40 CST 2017]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/javaEEworkspace/dove/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.2.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 4.3.2.Final
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cstudent
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [student_name, s_id, password, openid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cwechat
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [access_token, id, expires_in]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2017-08-10 10:15:41",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:929066990, ConnectTime:"2017-08-10 10:15:48", UseCount:2, LastActiveTime:"2017-08-10 10:15:53"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 13488 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:15:54 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.justify(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/bound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/doBound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/confirmController/confirm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.ConfirmController.confirm(zust.entity.wechatSignature) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.login(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getIDUrl(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getCourse],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getCourseTable() throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/test],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.test() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getCode],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getAccessToken],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getAccessToken() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/createMenu],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.CreateMenu() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/sendMessage],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.sendMessage(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/connect],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.connectWeixin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getOpenid],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.getOpenid(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:15:54 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:15:54 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 4641 ms
+WARN btpool0-2 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcher'
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/common/login] in DispatcherServlet with name 'dispatcher'
+WARN btpool0-2 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/common/login] in DispatcherServlet with name 'dispatcher'
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Thu Aug 10 10:18:46 CST 2017]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/javaEEworkspace/dove/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.2.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 4.3.2.Final
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cstudent
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [student_name, s_id, password, openid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cwechat
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [access_token, id, expires_in]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2017-08-10 10:18:47",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:869437194, ConnectTime:"2017-08-10 10:18:52", UseCount:2, LastActiveTime:"2017-08-10 10:18:52"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 6664 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:18:53 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.justify(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/bound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/doBound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/confirmController/confirm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.ConfirmController.confirm(zust.entity.wechatSignature) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getIDUrl(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getCourse],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getCourseTable() throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.login(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/test],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.test() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getCode],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getOpenid],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.getOpenid(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getAccessToken],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getAccessToken() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/sendMessage],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.sendMessage(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/connect],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.connectWeixin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/createMenu],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.CreateMenu() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:18:53 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:18:53 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 1185 ms
+WARN btpool0-0 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcher'
+WARN btpool0-3 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-3 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-3 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-3 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-3 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-3 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-3 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-3 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Thu Aug 10 10:31:02 CST 2017]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/javaEEworkspace/dove/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.2.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 4.3.2.Final
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cstudent
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [student_name, s_id, password, openid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cwechat
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [access_token, id, expires_in]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2017-08-10 10:31:03",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:929066990, ConnectTime:"2017-08-10 10:31:08", UseCount:2, LastActiveTime:"2017-08-10 10:31:09"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 6776 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:31:09 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.justify(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/bound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/doBound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/confirmController/confirm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.ConfirmController.confirm(zust.entity.wechatSignature) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.login(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getCourse],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getCourseTable() throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getIDUrl(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/test],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.test() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getAccessToken],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getAccessToken() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/connect],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.connectWeixin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/createMenu],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.CreateMenu() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/sendMessage],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.sendMessage(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getOpenid],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.getOpenid(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getCode],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:31:09 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:31:09 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 745 ms
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Thu Aug 10 10:33:39 CST 2017]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/javaEEworkspace/dove/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.2.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 4.3.2.Final
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cstudent
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [student_name, s_id, password, openid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cwechat
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [access_token, id, expires_in]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2017-08-10 10:33:40",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:869437194, ConnectTime:"2017-08-10 10:33:46", UseCount:2, LastActiveTime:"2017-08-10 10:33:46"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 7750 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:33:46 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.justify(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/bound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/doBound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/confirmController/confirm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.ConfirmController.confirm(zust.entity.wechatSignature) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getIDUrl(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.login(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getCourse],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getCourseTable() throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/test],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.test() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getCode],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/createMenu],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.CreateMenu() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getOpenid],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.getOpenid(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/connect],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.connectWeixin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/sendMessage],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.sendMessage(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getAccessToken],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getAccessToken() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:33:46 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:33:46 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 720 ms
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Thu Aug 10 10:39:42 CST 2017]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/javaEEworkspace/dove/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.2.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 4.3.2.Final
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cstudent
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [student_name, s_id, password, openid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cwechat
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [access_token, id, expires_in]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2017-08-10 10:39:43",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:869437194, ConnectTime:"2017-08-10 10:39:48", UseCount:2, LastActiveTime:"2017-08-10 10:39:48"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 6881 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:39:49 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/doBound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/bound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.justify(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/confirmController/confirm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.ConfirmController.confirm(zust.entity.wechatSignature) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getCourse],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getCourseTable() throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.login(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getIDUrl(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/test],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.test() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getAccessToken],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getAccessToken() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/connect],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.connectWeixin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/sendMessage],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.sendMessage(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getOpenid],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.getOpenid(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/createMenu],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.CreateMenu() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getCode],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:39:49 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:39:49 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 696 ms
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+INFO Timer-1 org.springframework.web.context.support.XmlWebApplicationContext -Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:39:49 CST 2017]; parent: Root WebApplicationContext
+INFO Timer-1 org.springframework.web.context.support.XmlWebApplicationContext -Closing Root WebApplicationContext: startup date [Thu Aug 10 10:39:42 CST 2017]; root of context hierarchy
+INFO Timer-1 com.alibaba.druid.pool.DruidDataSource -{dataSource-1} closed
+INFO Timer-1 org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO Timer-1 org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Thu Aug 10 10:43:51 CST 2017]; root of context hierarchy
+INFO Timer-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/applicationContext.xml]
+INFO Timer-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-hibernate.xml]
+INFO Timer-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-druid.xml]
+INFO Timer-1 org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/javaEEworkspace/dove/target/classes/application.properties]
+INFO Timer-1 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO Timer-1 com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO Timer-1 org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO Timer-1 org.hibernate.Version -HHH000412: Hibernate Core {4.3.2.Final}
+INFO Timer-1 org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO Timer-1 org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO Timer-1 org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO Timer-1 org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO Timer-1 org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO Timer-1 org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 4.3.2.Final
+INFO Timer-1 org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO Timer-1 org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO Timer-1 org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO Timer-1 org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cstudent
+INFO Timer-1 org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [student_name, s_id, password, openid, id]
+INFO Timer-1 org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO Timer-1 org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO Timer-1 org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cwechat
+INFO Timer-1 org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [access_token, id, expires_in]
+INFO Timer-1 org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO Timer-1 org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO Timer-1 org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO Timer-1 org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2017-08-10 10:43:52",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:925889014, ConnectTime:"2017-08-10 10:43:56", UseCount:2, LastActiveTime:"2017-08-10 10:43:57"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO Timer-1 org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 6691 ms
+INFO Timer-1 org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO Timer-1 org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:43:57 CST 2017]; parent: Root WebApplicationContext
+INFO Timer-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO Timer-1 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO Timer-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/doBound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+INFO Timer-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/bound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String) throws java.io.IOException
+INFO Timer-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.justify(java.lang.String) throws java.io.IOException
+INFO Timer-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/confirmController/confirm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.ConfirmController.confirm(zust.entity.wechatSignature) throws java.io.IOException
+INFO Timer-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getCourse],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getCourseTable() throws java.lang.Exception
+INFO Timer-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.login(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO Timer-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getIDUrl(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO Timer-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/test],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.test() throws java.io.IOException
+INFO Timer-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getAccessToken],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getAccessToken() throws java.io.IOException
+INFO Timer-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/connect],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.connectWeixin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO Timer-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/sendMessage],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.sendMessage(java.lang.String) throws java.io.IOException
+INFO Timer-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getOpenid],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.getOpenid(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+INFO Timer-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/createMenu],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.CreateMenu() throws java.io.IOException
+INFO Timer-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getCode],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO Timer-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:43:57 CST 2017]; parent: Root WebApplicationContext
+INFO Timer-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:43:57 CST 2017]; parent: Root WebApplicationContext
+INFO Timer-1 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO Timer-1 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO Timer-1 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO Timer-1 org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 543 ms
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Thu Aug 10 10:44:16 CST 2017]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/javaEEworkspace/dove/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.2.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 4.3.2.Final
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cstudent
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [student_name, s_id, password, openid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cwechat
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [access_token, id, expires_in]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2017-08-10 10:44:17",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:869437194, ConnectTime:"2017-08-10 10:44:22", UseCount:2, LastActiveTime:"2017-08-10 10:44:23"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 7345 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:44:23 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.justify(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/bound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/doBound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/confirmController/confirm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.ConfirmController.confirm(zust.entity.wechatSignature) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.login(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getCourse],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getCourseTable() throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getIDUrl(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/test],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.test() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getCode],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/createMenu],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.CreateMenu() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/sendMessage],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.sendMessage(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/connect],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.connectWeixin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getOpenid],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.getOpenid(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getAccessToken],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getAccessToken() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:44:23 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:44:23 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 838 ms
+WARN btpool0-1 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-1 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-1 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-1 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-1 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-1 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-1 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-1 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-1 org.hibernate.engine.jdbc.spi.SqlExceptionHelper -SQL Error: 1048, SQLState: 23000
+ERROR btpool0-1 org.hibernate.engine.jdbc.spi.SqlExceptionHelper -Column 'student_name' cannot be null
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Thu Aug 10 10:50:32 CST 2017]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/javaEEworkspace/dove/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.2.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 4.3.2.Final
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cstudent
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [student_name, s_id, password, openid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cwechat
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [access_token, id, expires_in]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2017-08-10 10:50:33",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:929066990, ConnectTime:"2017-08-10 10:50:38", UseCount:2, LastActiveTime:"2017-08-10 10:50:38"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 6503 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:50:39 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.justify(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/bound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/doBound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/confirmController/confirm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.ConfirmController.confirm(zust.entity.wechatSignature) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getIDUrl(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getCourse],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getCourseTable() throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.login(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/test],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.test() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getCode],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/createMenu],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.CreateMenu() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getAccessToken],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getAccessToken() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getOpenid],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.getOpenid(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/sendMessage],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.sendMessage(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/connect],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.connectWeixin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:50:39 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 10:50:39 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 758 ms
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Thu Aug 10 11:59:21 CST 2017]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/javaEEworkspace/dove/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.2.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 4.3.2.Final
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cstudent
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [student_name, s_id, password, openid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cwechat
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [access_token, id, expires_in]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2017-08-10 11:59:22",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:869437194, ConnectTime:"2017-08-10 11:59:27", UseCount:2, LastActiveTime:"2017-08-10 11:59:27"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 6699 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 11:59:28 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.justify(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/bound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/doBound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/confirmController/confirm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.ConfirmController.confirm(zust.entity.wechatSignature) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.login(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getCourse],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getCourseTable() throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getIDUrl(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/test],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.test() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/createMenu],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.CreateMenu() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/connect],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.connectWeixin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getAccessToken],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getAccessToken() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/sendMessage],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.sendMessage(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getOpenid],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.getOpenid(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getCode],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 11:59:28 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 11:59:28 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 735 ms
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-2 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Thu Aug 10 12:10:14 CST 2017]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/javaEEworkspace/dove/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.2.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 4.3.2.Final
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cstudent
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [student_name, s_id, password, openid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cwechat
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [access_token, id, expires_in]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2017-08-10 12:10:15",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:869437194, ConnectTime:"2017-08-10 12:10:20", UseCount:2, LastActiveTime:"2017-08-10 12:10:20"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 6853 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:10:21 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.justify(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/bound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/doBound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/confirmController/confirm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.ConfirmController.confirm(zust.entity.wechatSignature) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.login(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getCourse],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getCourseTable() throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getIDUrl(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/test],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.test() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getCode],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/createMenu],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.CreateMenu() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/connect],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.connectWeixin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getOpenid],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.getOpenid(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/sendMessage],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.sendMessage(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getAccessToken],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getAccessToken() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:10:21 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:10:21 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 696 ms
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Thu Aug 10 12:12:39 CST 2017]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/javaEEworkspace/dove/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.2.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 4.3.2.Final
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cstudent
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [student_name, s_id, password, openid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cwechat
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [access_token, id, expires_in]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2017-08-10 12:12:40",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:76379039, ConnectTime:"2017-08-10 12:12:45", UseCount:2, LastActiveTime:"2017-08-10 12:12:46"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 6798 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:12:46 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.justify(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/bound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/doBound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/confirmController/confirm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.ConfirmController.confirm(zust.entity.wechatSignature) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.login(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getCourse],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getCourseTable() throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getIDUrl(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/test],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.test() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getCode],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getOpenid],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.getOpenid(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getAccessToken],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getAccessToken() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/sendMessage],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.sendMessage(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/createMenu],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.CreateMenu() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/connect],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.connectWeixin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:12:46 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:12:46 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 742 ms
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Thu Aug 10 12:22:15 CST 2017]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/javaEEworkspace/dove/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.2.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 4.3.2.Final
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cstudent
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [student_name, s_id, password, openid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cwechat
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [access_token, id, expires_in]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2017-08-10 12:22:16",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:869437194, ConnectTime:"2017-08-10 12:22:21", UseCount:2, LastActiveTime:"2017-08-10 12:22:22"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 7012 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:22:22 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.justify(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/bound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/doBound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/confirmController/confirm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.ConfirmController.confirm(zust.entity.wechatSignature) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.login(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getIDUrl(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getCourse],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getCourseTable() throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/test],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.test() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getCode],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/sendMessage],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.sendMessage(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/connect],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.connectWeixin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getOpenid],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.getOpenid(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/createMenu],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.CreateMenu() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getAccessToken],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getAccessToken() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:22:22 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:22:22 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 829 ms
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Thu Aug 10 12:32:18 CST 2017]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/javaEEworkspace/dove/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.2.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 4.3.2.Final
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cstudent
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [student_name, s_id, password, openid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cwechat
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [access_token, id, expires_in]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2017-08-10 12:32:19",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:929066990, ConnectTime:"2017-08-10 12:32:24", UseCount:2, LastActiveTime:"2017-08-10 12:32:24"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 7054 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:32:25 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.justify(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/bound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/doBound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/confirmController/confirm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.ConfirmController.confirm(zust.entity.wechatSignature) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getIDUrl(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.login(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getCourse],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getCourseTable() throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/test],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.test() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getCode],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/connect],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.connectWeixin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/createMenu],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.CreateMenu() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getAccessToken],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getAccessToken() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/sendMessage],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.sendMessage(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getOpenid],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.getOpenid(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:32:25 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:32:25 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 685 ms
+WARN btpool0-4 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-4 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-4 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-4 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-4 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-4 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-4 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-4 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Thu Aug 10 12:34:10 CST 2017]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/javaEEworkspace/dove/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.2.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 4.3.2.Final
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cstudent
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [student_name, s_id, password, openid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cwechat
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [access_token, id, expires_in]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2017-08-10 12:34:10",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:869437194, ConnectTime:"2017-08-10 12:34:15", UseCount:2, LastActiveTime:"2017-08-10 12:34:16"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 6918 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:34:16 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.justify(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/bound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/doBound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/confirmController/confirm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.ConfirmController.confirm(zust.entity.wechatSignature) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.login(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getIDUrl(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getCourse],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getCourseTable() throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/test],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.test() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getCode],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getAccessToken],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getAccessToken() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/sendMessage],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.sendMessage(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/createMenu],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.CreateMenu() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/connect],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.connectWeixin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getOpenid],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.getOpenid(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:34:16 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:34:16 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 728 ms
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Thu Aug 10 12:36:17 CST 2017]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/javaEEworkspace/dove/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.2.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 4.3.2.Final
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cstudent
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [student_name, s_id, password, openid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cwechat
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [access_token, id, expires_in]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2017-08-10 12:36:18",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:869437194, ConnectTime:"2017-08-10 12:36:24", UseCount:2, LastActiveTime:"2017-08-10 12:36:24"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 6900 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:36:24 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.justify(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/bound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/doBound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/confirmController/confirm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.ConfirmController.confirm(zust.entity.wechatSignature) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.login(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getCourse],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getCourseTable() throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getIDUrl(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/test],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.test() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getOpenid],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.getOpenid(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/sendMessage],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.sendMessage(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getAccessToken],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getAccessToken() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/connect],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.connectWeixin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/createMenu],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.CreateMenu() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getCode],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:36:24 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 12:36:24 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 698 ms
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-0 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Thu Aug 10 16:26:47 CST 2017]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/javaEEworkspace/dove/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.2.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 4.3.2.Final
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cstudent
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [student_name, s_id, password, openid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cwechat
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [access_token, id, expires_in]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2017-08-10 16:26:48",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:869437194, ConnectTime:"2017-08-10 16:26:53", UseCount:2, LastActiveTime:"2017-08-10 16:26:54"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 6639 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 16:26:54 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.justify(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/bound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/doBound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/confirmController/confirm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.ConfirmController.confirm(zust.entity.wechatSignature) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getCourse],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getCourseTable() throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getIDUrl(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.login(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/test],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.test() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getCode],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getAccessToken],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getAccessToken() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/createMenu],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.CreateMenu() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/connect],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.connectWeixin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/sendMessage],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.sendMessage(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getOpenid],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.getOpenid(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 16:26:54 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 16:26:54 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 753 ms
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-5 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-4 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-4 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-4 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-4 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-4 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-4 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-4 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-4 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Thu Aug 10 16:42:26 CST 2017]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/applicationContext.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-hibernate.xml]
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from URL [file:/D:/javaEEworkspace/dove/target/classes/spring-druid.xml]
+INFO main org.springframework.context.support.PropertySourcesPlaceholderConfigurer -Loading properties file from URL [file:/D:/javaEEworkspace/dove/target/classes/application.properties]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+INFO main org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO main org.hibernate.Version -HHH000412: Hibernate Core {4.3.2.Final}
+INFO main org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator -HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.internal.util.Version -HV000001: Hibernate Validator 4.3.2.Final
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cstudent
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [student_name, s_id, password, openid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000261: Table found: clouddove.cwechat
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000037: Columns: [access_token, id, expires_in]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata -HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate -HHH000232: Schema update complete
+INFO main org.springframework.orm.hibernate4.HibernateTransactionManager -Using DataSource [{
+	CreateTime:"2017-08-10 16:42:27",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:76379039, ConnectTime:"2017-08-10 16:42:32", UseCount:2, LastActiveTime:"2017-08-10 16:42:33"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+INFO main org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 6892 ms
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization started
+INFO main org.springframework.web.context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 16:42:33 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring-mvc.xml]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.justify(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/bound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/common/doBound],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.CommonController.bound(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/confirmController/confirm],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.ConfirmController.confirm(zust.entity.wechatSignature) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/justify],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getIDUrl(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.login(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/grep/getCourse],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String zust.controller.GrepController.getCourseTable() throws java.lang.Exception
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/test],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.test() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/sendMessage],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.sendMessage(java.lang.String) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getAccessToken],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getAccessToken() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/connect],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.connectWeixin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getOpenid],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.lang.String zust.controller.WechatController.getOpenid(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/createMenu],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void zust.controller.WechatController.CreateMenu() throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -Mapped "{[/wechat/getCode],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private void zust.controller.WechatController.getCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 16:42:33 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Aug 10 16:42:33 CST 2017]; parent: Root WebApplicationContext
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/register.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/test.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/login.html] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO main org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcher': initialization completed in 722 ms
+WARN btpool0-3 org.springframework.web.servlet.PageNotFound -No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcher'
+WARN btpool0-3 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-3 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-3 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-3 com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument -Nothing done for execCommand(BackgroundImageCache, ...) (feature not implemented)
+WARN btpool0-3 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-3 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-3 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
+WARN btpool0-3 com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl -Obsolete content type encountered: 'application/x-javascript'.
